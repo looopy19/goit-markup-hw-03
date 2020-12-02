@@ -81,7 +81,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid black; */
+  outline: 2px solid black;
 }
 
 /* лого */
@@ -103,7 +103,6 @@ img {
 /* навигация */
 
 .page-header {
-  margin-bottom: 94px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -150,19 +149,25 @@ img {
   color: var(--accent-color);
 }
 
+/* .page-nav a:visited { */
+/* color: var(--primary-text-color); */
+/* } */
+
 /* main */
 
 .hero-section {
   background-color: var(--hero-bg-color);
   text-align: center;
   margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
   color: var(--additional-white-color);
   font-family: var(--secondary-font);
   font-size: 44px;
-  font-style: normal;
+  text-transform: uppercase;
   font-weight: 900;
   line-height: 60px;
   letter-spacing: 0.06em;
@@ -240,7 +245,11 @@ img {
   padding-top: 94px;
 }
 
-.section {
+.section.team {
+  padding-bottom: 94px;
+}
+
+.section:not(:last-child) {
   margin-bottom: 94px;
 }
 
@@ -389,11 +398,8 @@ img {
   flex-wrap: wrap;
 }
 
-.projects-list img {
-  display: block;
-}
-
 .projects-list li {
+  width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
